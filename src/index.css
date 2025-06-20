@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 249 249 249; /* Snow White */
+    --background: 255 255 255; /* White */
     --foreground: 27 38 59; /* Midnight Blue */
 
     --card: 255 255 255;
