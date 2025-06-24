@@ -198,7 +198,7 @@ const Contact = () => {
                 size="lg"
               >
                 <a
-                  href="/NaseemCV.pdf"
+                  href="../public/Naseem_Badran_CV.pdf"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
