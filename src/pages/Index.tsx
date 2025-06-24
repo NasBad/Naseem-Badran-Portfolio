@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -10,7 +11,7 @@ import Languages from "@/components/Languages";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-snow-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
       <About />
