@@ -1,3 +1,4 @@
+
 const Education = () => {
   const education = [
     {
@@ -21,16 +22,16 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-snow-white">
+    <section id="education" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-midnight-blue text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           Education
         </h2>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-electric-blue/30"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
 
             {education.map((edu, index) => (
               <div
@@ -38,22 +39,22 @@ const Education = () => {
                 className="relative flex items-start mb-12 last:mb-0"
               >
                 {/* Timeline dot */}
-                <div className="absolute left-6 w-4 h-4 bg-electric-blue rounded-full border-4 border-white shadow-md"></div>
+                <div className="absolute left-6 w-4 h-4 bg-black rounded-full border-4 border-white shadow-md"></div>
 
                 {/* Content */}
-                <div className="ml-16 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full">
+                <div className="ml-16 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full border border-gray-200">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-midnight-blue">
+                    <h3 className="text-xl font-semibold text-gray-900">
                       {edu.degree}
                     </h3>
                     <div className="flex items-center space-x-3">
-                      <span className="text-electric-blue font-medium">
+                      <span className="text-black font-medium">
                         {edu.period}
                       </span>
                       <span
                         className={`px-3 py-1 text-xs rounded-full ${
                           edu.status === "In Progress"
-                            ? "bg-electric-blue/10 text-electric-blue"
+                            ? "bg-gray-100 text-black"
                             : "bg-green-100 text-green-700"
                         }`}
                       >
@@ -62,11 +63,11 @@ const Education = () => {
                     </div>
                   </div>
 
-                  <h4 className="text-lg text-charcoal font-medium mb-3">
+                  <h4 className="text-lg text-gray-700 font-medium mb-3">
                     {edu.institution}
                   </h4>
 
-                  <p className="text-charcoal/80 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {edu.description}
                   </p>
 
@@ -74,8 +75,8 @@ const Education = () => {
                     <span
                       className={`px-3 py-1 text-sm rounded-full ${
                         edu.type === "degree"
-                          ? "bg-midnight-blue/10 text-midnight-blue"
-                          : "bg-electric-blue/10 text-electric-blue"
+                          ? "bg-gray-100 text-gray-900"
+                          : "bg-gray-100 text-black"
                       }`}
                     >
                       {edu.type === "degree"

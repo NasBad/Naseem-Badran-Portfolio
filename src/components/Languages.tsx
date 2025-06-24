@@ -1,3 +1,4 @@
+
 const Languages = () => {
   const languages = [
     {
@@ -31,9 +32,9 @@ const Languages = () => {
   ];
 
   return (
-    <section id="languages" className="py-20 bg-white">
+    <section id="languages" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-midnight-blue text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           Languages
         </h2>
 
@@ -43,36 +44,36 @@ const Languages = () => {
             {languages.map((lang, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-electric-blue/5 to-midnight-blue/5 p-8 rounded-lg hover:shadow-lg transition-shadow"
+                className="bg-white p-8 rounded-lg hover:shadow-lg transition-shadow border border-gray-200"
               >
                 <div className="flex items-center mb-4">
                   <span className="text-4xl mr-4">{lang.flag}</span>
                   <div>
-                    <h3 className="text-2xl font-semibold text-midnight-blue">
+                    <h3 className="text-2xl font-semibold text-gray-900">
                       {lang.language}
                     </h3>
-                    <span className="text-electric-blue font-medium text-lg">
+                    <span className="text-black font-medium text-lg">
                       {lang.level}
                     </span>
                   </div>
                 </div>
 
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-charcoal">
+                  <div className="flex items-center text-gray-700">
                     <span className="font-medium mr-2">Duration:</span>
                     <span>{lang.duration}</span>
                   </div>
-                  <div className="flex items-center text-charcoal">
+                  <div className="flex items-center text-gray-700">
                     <span className="font-medium mr-2">Location:</span>
                     <span>{lang.location}</span>
                   </div>
-                  <div className="flex items-center text-charcoal">
+                  <div className="flex items-center text-gray-700">
                     <span className="font-medium mr-2">School:</span>
                     <span className="text-sm">{lang.school}</span>
                   </div>
                 </div>
 
-                <p className="text-charcoal/80 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {lang.description}
                 </p>
               </div>
@@ -80,8 +81,8 @@ const Languages = () => {
           </div>
 
           {/* Core Skills from Language Studies */}
-          <div className="bg-midnight-blue/5 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold text-midnight-blue text-center mb-8">
+          <div className="bg-gray-100 p-8 rounded-lg">
+            <h3 className="text-2xl font-semibold text-gray-900 text-center mb-8">
               Skills Developed from Language Studies
             </h3>
 
@@ -91,8 +92,8 @@ const Languages = () => {
                   key={index}
                   className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm"
                 >
-                  <div className="w-2 h-2 bg-electric-blue rounded-full flex-shrink-0"></div>
-                  <span className="text-charcoal">{skill}</span>
+                  <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-700">{skill}</span>
                 </div>
               ))}
             </div>

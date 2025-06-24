@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -60,12 +61,11 @@ const Projects = () => {
   ];
 
   const featuredProjects = projects.filter((project) => project.featured);
-  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-snow-white">
+    <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-midnight-blue text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           Featured Projects
         </h2>
 
@@ -73,13 +73,13 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <Card
               key={index}
-              className="bg-gray border-midnight-blue group hover:shadow-xl transition-all duration-300 border-2 hover:border-electric-blue/30"
+              className="bg-white border-gray-900 group hover:shadow-xl transition-all duration-300 border-2 hover:border-gray-600"
             >
               <CardHeader>
-                <CardTitle className="text-xl text-midnight-blue group-hover:text-electric-blue transition-colors">
+                <CardTitle className="text-xl text-gray-900 group-hover:text-black transition-colors">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-charcoal/80">
+                <CardDescription className="text-gray-700">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -89,7 +89,7 @@ const Projects = () => {
                     <Badge
                       key={techIndex}
                       variant="secondary"
-                      className="bg-electric-blue/10 text-electric-blue"
+                      className="bg-gray-100 text-black"
                     >
                       {tech}
                     </Badge>
@@ -97,7 +97,7 @@ const Projects = () => {
                 </div>
                 <Button
                   variant="outline"
-                  className="bg-gray border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-white"
+                  className="bg-white border-black text-black hover:bg-black hover:text-white"
                 >
                   <Github size={16} className="mr-2" />
                   View Code

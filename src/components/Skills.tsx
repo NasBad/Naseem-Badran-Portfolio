@@ -1,3 +1,4 @@
+
 const Skills = () => {
   const skillCategories = [
     {
@@ -44,9 +45,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-snow-white">
+    <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-midnight-blue text-center mb-12">
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           Skills & Expertise
         </h2>
 
@@ -54,9 +55,9 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200"
             >
-              <h3 className="text-xl font-semibold text-midnight-blue mb-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 {category.category}
               </h3>
 
@@ -64,17 +65,17 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-charcoal font-medium">
+                      <span className="text-gray-700 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-electric-blue text-sm font-medium">
+                      <span className="text-black text-sm font-medium">
                         {skill.level}%
                       </span>
                     </div>
 
-                    <div className="w-full bg-soft-gray/50 rounded-full h-2">
+                    <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
-                        className="bg-gradient-to-r from-electric-blue to-midnight-blue h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-gray-800 to-black h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -86,8 +87,8 @@ const Skills = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <div className="bg-gradient-to-r from-electric-blue/10 to-midnight-blue/10 p-8 rounded-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-midnight-blue mb-4">
+          <div className="bg-gray-100 p-8 rounded-lg max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               Soft Skills
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
@@ -105,7 +106,7 @@ const Skills = () => {
               ].map((skill, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 bg-white text-midnight-blue rounded-full shadow-sm hover:shadow-md transition-shadow"
+                  className="px-4 py-2 bg-white text-gray-900 rounded-full shadow-sm hover:shadow-md transition-shadow border border-gray-200"
                 >
                   {skill}
                 </span>
